@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+</head>
+
+<body>
+    <div class="container mb-4 mt-4">
+        <center>
+            <!-- Title -->
+            <h1 style="font-size: 3.5rem;">
+                <font class="text-primary">T</font>ic <font class="text-primary">T</font>ac  <font class="text-primary">T</font>oe <small
+                    class="text-muted"> ( Game )</small>
+            </h1>
+            <h4>Tic Tac Toe is a game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. </h4>
+        </center>
+        <div class="row mx-auto mb-3" style="max-width: 700px;">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="media">
+                            <img src="assets/images/zero.png" class="mr-3" alt="...">
+                            <div class="media-body">
+                              <h4 class="mb-0">Player One <font class="text-primary" id="playerZScore_ID">0</font></h4>
+                               <h4 class="text-muted">Human</h4>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="media">
+                            <img src="assets/images/close.png" class="mr-3" alt="...">
+                            <div class="media-body">
+                              <h4 class="mb-0">Player Two <font class="text-primary" id="playerXScore_ID">0</font></h4>
+                               <h4 class="text-muted" id="playerXinfo_ID">Human</h4>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center>
+            <button class="btn btn-primary mb-3" onclick="javascript: switchPlayer();" id="switchButton_ID">Play with computer</button>
+            <h4 class="text-muted">Click on the blocks to start game.</h4>
+            <!-- Canvas with map image  -->
+            <canvas style="background: url('assets/images/back.png');" class="shadow mt-3 mb-0" height="420" width="420"
+                id="myCanvas"></canvas>
+        </center>
+        <div class="mt-2 card shadow-sm">
+            <div class="card-body">
+                <h4>Love Saroha <br>
+                    <font class="text-primary"><i class="fad fa-envelope"></i> lovesaroha1994@gmail.com</font>
+                </h4>
+                <h4>Source Code <br><a href="https://github.com/lovesaroha/Tic-Tac-Toe-Game" target="_blank"><i
+                            class="fad fa-code-merge text-primary"></i>
+                        https://github.com/lovesaroha/Tic-Tac-Toe-Game</a></h4>
+                <h4>Website <br><a href="https://lovesaroha.com"><i class="fad fa-link text-primary"></i>
+                        www.lovesaroha.com</a></h4>
+            </div>
+        </div>
+    </div>
+    <!-- Include script.js file -->
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+
+</html>
