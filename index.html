@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="tic tac toe game">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/fa.min.css">
+</head>
+
+<body>
+    <div class="container w-full mx-auto max-w-8/12 md:px-4 pb-8">
+        <!-- Header. -->
+        <center>
+            <h1 class="font-bold display-1 underline">
+                Tic Tac Toe
+            </h1>
+            <h4 class="text-subtitle mb-6">
+                Tic Tac Toe is a game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The
+                player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the
+                winner.</h4>
+        </center>
+        <!-- Score board. -->
+        <div class="md:flex flex-wrap mb-3 justify-center gap-4">
+            <div class="p-2 card mb-1 px-4 max-w-md shadow-md md:flex">
+                <i class="fad fa-circle mr-3 text-primary fa-4x"></i>
+                <h1 id="playerZScore_ID" class="text-subtitle self-center">0</h1>
+            </div>
+            <div class="p-2 card mb-1 px-4 max-w-md shadow-md md:flex flex-wrap">
+                <i class="fad fa-times mr-3 text-primary fa-4x"></i>
+                <h1 id="playerXScore_ID" class="text-subtitle self-center">0</h1>
+            </div>
+        </div>
+        <div class="bg-light mx-auto text-center max-w-md p-2 mb-2">
+            <h4 class="text-gray mb-0">Click on the blocks to start game.</h4>
+        </div>
+    </div>
+    <center>
+        <button class="mb-2" onclick="javascript: switchPlayer();" id="switchButton_ID">Play with
+            computer</button>
+    </center>
+    <center>
+        <!-- Canvas with image.  -->
+        <canvas style="background: url('assets/background.png');" class="shadow-md mt-3 mb-2 hide-on-md" height="420"
+            width="420" id="myCanvas"></canvas>
+    </center>
+    <!-- Footer. -->
+    <div class="mb-2 card text-center p-2 mx-auto max-w-xl">
+        <h4 class="text-subtitle"><a href="https://github.com/lovesaroha/Tic-Tac-Toe-Game"
+                target="_blank">LoveSaroha/Tic-Tac-Toe-Game</a></h4>
+        <h3 class="text-subtitle font-bold mb-0 hover:underline cursor-pointer"
+            onclick="javascript: window.location = 'https://lovesaroha.com';">Love Saroha</h3>
+        <h4 class="text-gray">lovesaroha1994@gmail.com</h4>
+    </div>
+    <!-- Include script.js file -->
+    <script type="text/javascript" src="./assets/script.js"></script>
+</body>
+
+</html>
