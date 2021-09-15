@@ -65,22 +65,20 @@ function resetGame() {
     }, 1000);
 }
 
+
 // Show grid function shows grid on canvas.
 function showGrid() {
     ctx.globalCompositeOperation = 'destination-over';
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.font = `100px "Font Awesome 5 Pro"`;
+    ctx.fillStyle = colorTheme;
+    ctx.textAlign = 'center';
     for (let i = 0; i < 9; i++) {
         if (grid[i] == -1) {
             // Show cross icon.
-            ctx.font = `300 100px "Font Awesome 5 Pro"`;
-            ctx.fillStyle = colorTheme;
-            ctx.textAlign = 'center';
             ctx.fillText("\uf00d", iconPositions[i].x, iconPositions[i].y);
         } else if (grid[i] == 1) {
             // Show zero icon.
-            ctx.font = `300 90px "Font Awesome 5 Pro"`;
-            ctx.fillStyle = colorTheme;
-            ctx.textAlign = 'center';
             ctx.fillText("\uf111", iconPositions[i].x, iconPositions[i].y);
         }
     }
