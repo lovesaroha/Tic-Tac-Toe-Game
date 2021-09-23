@@ -3,4 +3,4 @@
 
 ![game](https://raw.githubusercontent.com/lovesaroha/gimages/main/13.png)
 
-[lovesaroha/p/Tic-Tac-Toe-Game](https://lovesaroha.com/p/Tic-Tac-Toe-Game)
+[lovesaroha/Tic-Tac-Toe-Game](https://games.lovesaroha.com/Tic-Tac-Toe-Game)
